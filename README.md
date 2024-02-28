@@ -54,8 +54,8 @@ The repository contains the main file
 
 
 # Example to run the experiment  
-**"Mobile Robot"**
-### Matlab/Simulink simulation 
+
+### Matlab/Simulink simulation **"Mobile Robot"** 
 1. Download the files or clone the repository 
 2. Run the Matlab file "**Final_Project**".
 4. The plots should start to show the results  
