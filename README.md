@@ -32,44 +32,34 @@ The obstacles are static
 ![image](https://github.com/fercho-0109/Mobile-robotics/assets/40362695/bef6face-4e72-4604-9409-2a6ba333d4fd)
 
 
+## CONTROL
+The objective is to design proper control input for the robot so that it drives its pose to a given trajectory or target state. Due to the characteristics of path planning, the Input/Output linearization control law was selected to drive the robot on the path at the correct time. Because the input-output linearization control would drive point B on the target, the Posture Regulation  control is considered to drive the robot to the desired pose.  
+The idea is to remove the nonlinearities of the model by choosing a proper control law so that the closed-loop system results has a linear relationship with the inputs and outputs. Then, standard control techniques can be used to design the control law.  
+![image](https://github.com/fercho-0109/Mobile-robotics/assets/40362695/2aa65a5c-04be-4aaa-a429-f6b81f5d5da9)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##  Positioning
+The objective is to Locate (position and attitude) the robot in a given environment and in a given reference frame.  
+For this task, a set of Beacons located as shown in the figure is assumed as sensors. The position of each sensor is apriori known. For simplicity is supposed that the sensors can cover all the space of the environment. Also, it is assumed that the sensor measurements are noise-affected.
+![image](https://github.com/fercho-0109/Mobile-robotics/assets/40362695/f7e19f1d-bc56-4c1a-a998-b423591c5177)  
+As we can see the sensors, because of the noise, do not represent reliable data of the position of the robot. Therefore, the application of a filter that improves the reliability of the data is necessary. To deal with this problem, the Extended Kalman Filter is taken into account since we are working with a non-linear model. Additionally, the system has noise in the model and in the measurements. 
 
  
 # Prerequisites
 - The code was created and tested on the Matlab/Simulink 2023a environment
 
 # File description
-The repository contains three files
-1. **Electric_Bicycle**: This Matlab file contains the configuration parameters of the program and shows the results of the analysis.
-2. **Electric_Bike**: This Simulink file contains the complete simulation of the e-bike system and the implementation of the observer and control.
-3. **Report**: This contains the complete explanation, the mathematical formulations, and the control configuration.
+The repository contains the main file
+1. **project-simulink**: This folder contains all the necessary programs and functions to run the model
+
 
 
 # Example to run the experiment  
-**"e-BIKE"**
+**"Mobile Robot"**
 ### Matlab/Simulink simulation 
-1. Download the files. 
-2. Run the Matlab file "**Electric_Bicycle**".
-3. Open and run the Simulink file "**Electric_Bike**"
-4. The Scope blocks should start to show the results  
-![image](https://github.com/fercho-0109/Dynamic-system-analysis-of-a-e-Bike-/assets/40362695/38b221e3-3071-4afd-bd2a-a567903d0a51)  
-fig1. In blue is shown the graph of the free response without feedback. On the other hand, the orange graph is the response after feedback control which shows a noticeable reduction of the overshoot that is generated in the beginning
+1. Download the files or clone the repository 
+2. Run the Matlab file "**Final_Project**".
+4. The plots should start to show the results  
+
 
 
 
