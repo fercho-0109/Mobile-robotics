@@ -17,7 +17,7 @@ Design a mobile robot simulation capable of moving in a structured environment f
 - Assume a differential drive robot model  
 - The robot moves in a structured environment  
 - The environment is equipped with beacons localisation sensors  
-- 
+
 ## Differential Drive Model 
 ![image](https://github.com/fercho-0109/Mobile-robotics/assets/40362695/e4ec6f7c-1631-4a29-ae84-eefdb1700f1a)
 
