@@ -1,6 +1,6 @@
 # Mobile-robotics (Control-Positioning-Path planing)
 
-Code developed for "A. Marino, - Receding Horizon Tracking Trajectory Strategy for Feedback Linearized Differential-Drive".  
+Code developed for "A. Marino, - Control-Positioning-Path planing for Feedback Linearized Differential-Drive".  
 Master's student "Calabria University".  
 For any questions or suggestions write to alexismarino0109@gmail.com
 
